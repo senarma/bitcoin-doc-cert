@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+
+    <script src="ok.js"></script>
+<script>
+    sessionStorage.setItem("private-key", foo.createECPair());
+    sessionStorage.setItem("address", foo.returnaddressWIF(sessionStorage.getItem("private-key")) )
+</script>
+</head>
+
+<body>
+
+
+Private Key: <script>document.write(sessionStorage.getItem("private-key"))</script> </br>
+Address: <script>document.write(sessionStorage.getItem("address"))</script> </br>
+
+<a href="home.html"><button type="submit" onclick="foo.usarChave()">Usar esta chave</button></a>
+
+
+</body>
+
+</html>

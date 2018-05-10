@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+
+
+
+</head>
+
+<body>
+<script src="ok.js"></script>
+
+
+<script type="text/javascript" src="js/libs/sha256.js"></script>
+<script type="text/javascript" src="js/libs/jquery/jquery.js"></script>
+<script type="text/javascript" src="js/processokk.js"></script>
+<link type="text/css" rel="stylesheet" href="css/styles.css" />
+<div class="painel">
+
+Private Key: <script>document.write(localStorage.getItem('private-key'))</script> </br>
+Address: <script>document.write(localStorage.getItem('address'))</script> </br>
+Saldo:  <script>document.write  </script> </br>
+</div>
+
+<div align="center">
+  <h3>SEND PROOF TO BLOCKCHAIN</h3>
+  <form id="fileForm" class="fileForm">
+    <input id="fileInput" type="file" required="required" />
+    <button id="processButton" type="submit">Hash file</button>
+</form>
+
+<div class="fileStatus">
+    <progress id="processProgress" max="1" value="0"></progress>
+    <p><span id="processError" class="error"></span></p>
+    <table id="processResults">
+       
+        <tbody>
+            <tr><td>Name</td><td id="nameValue"></td></tr>
+            <tr><td>Size</td><td id="sizeValue"></td></tr>
+            <tr><td>Type</td><td id="typeValue"></td></tr>
+            <tr><td>Hash</td><td id="hashValue"></td></tr>
+        </tbody>
+    </table>
+    <button id='button-send'>Send Hash Proof to Blockchain</button>
+</div>
+
+
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+
+.fileForm {
+    margin: 1em;
+}
+
+.fileStatus {
+    margin: 1em;
+}
+
+.fileStatus .error {
+    border-style: solid;
+    border-width: medium;
+    border-color: black;
+    background-color: lightpink;
+    font-weight: bold;
+    padding: 0.5em;
+}
+
+.fileStatus table {
+    border-style: solid;
+    border-width: thin;
+    border-color: blue;
+    border-collapse: collapse;
+}
+
+.fileStatus thead {
+    background-color: #99cccc;
+}
+
+.fileStatus tbody tr:nth-child(odd) {
+    background-color: #eeffff;
+}
+
+.fileStatus tbody tr:nth-child(even) {
+    background-color: #ddeeee;
+}
+
+.fileStatus table th, td {
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    padding: 0.2em 0.5em 0.2em 0.5em;
+}
+
+
+#button-send {
+    margin-top:10px;
+}
